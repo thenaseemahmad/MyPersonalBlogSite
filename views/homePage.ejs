@@ -1,0 +1,15 @@
+<%- include("partials/header"); -%>
+<div class="container-fluid mt-4">
+
+    <% for(var i = 0; i<newJournals.length; i++){ %>
+        <div>
+            <h1><%= newJournals[i].journalTopic %></h1>
+            <p>
+                <%= newJournals[i].journalDetail.substring(0,99)+"....." %>
+                <a href="/posts/<%= newJournals[i].journalTopic %>">Read more</a>
+            </p>
+        </div>
+    <% } %>
+
+</div>    
+<%- include("partials/footer"); -%>

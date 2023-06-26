@@ -1,0 +1,7 @@
+//to install my-sql server
+sudo apt install mysql-server
+
+//to install mysql workbench
+sudo snap install mysql-workbench-community
+
+create user 'admin-programmer'@'localhost' identified by 'Mbappe@143'
